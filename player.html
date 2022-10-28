@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+	<title>Music Player </title>
+	<link href="icon.png" rel="icon">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	
+	<!-- Google Fonts -->
+	<link href="https://font.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet" />
+	
+	<!-- Stylesheet -->
+	<link href="style.css" rel="stylesheet">
+</head>
+	
+
+<body>
+<p></p>
+<p></p>
+
+<div id="loader"></div>
+<div id="wrapper">
+	<div class="music-player">
+		<button id="playlist">
+			<i class="fa-solid fa-angle-down"></i>
+		</button>
+		<img id="song-image" />
+		<p></p>
+		<div class="song-details">
+			<p id="song-name"></p>
+			<p id="song-artist"></p>
+		</div>
+		<div class="player-options">
+			<button id="shuffle">
+				<i class="fa-solid fa-shuffle"></i>
+			</button>
+			<button id="prev">
+				<i class="fa-solid fa-backward-step"></i>
+			</button>
+			<button id="play">
+				<i class="fa-solid fa-play"></i>
+			</button>
+			<button id="pause" class="hide">
+				<i class="fa-solid fa-pause"></i>
+			</button>
+			<button id="next">
+				<i class="fa-solid fa-forward-step"></i>
+			</button>
+			<button id="repeat">
+				<i class="fa-solid fa-repeat"></i>
+			</button>
+		</div>
+		<audio id="audio" preload="metadata"></audio>
+		<div id="progress-bar">
+			<div id="current-progress"></div>
+		</div>
+		<div class="time-container">
+			<span id="current-time">0:00</span>
+			<span id="max-duration">0:00</span>
+		</div>
+		<div id="playlist-container" class="hide">
+			<button id="close-button"><i class="fa-solid fa-xmark"></i></button>
+			<ul id="playlist-songs"></ul>
+		</div>
+	</div>
+	<!--<a href="https://youtu.be/-mw_XRTPftk" target="_blank">Watch Me Code &nbsp;<i class="fab fa-youtube"></i></a>-->
+</div>
+	
+	
+	<!-- Script -->
+	<script src="script.js"></script>
+	
+	
+<div class="data">
+	<audio src="https://www.dropbox.com/s/3mjzj73400sxovk/perfect.mp3?raw=1"></audio>
+	<audio src="https://www.dropbox.com/s/yo5tcfdjoz95ozf/7-rings.mp3?raw=1"></audio>
+	<audio src="https://www.dropbox.com/s/zp1xfir101y4sc3/happier.mp3?raw=1"></audio>
+	<audio src="https://www.dropbox.com/s/umam9olakop001d/stay.mp3?raw=1"></audio>
+	<audio src="https://www.dropbox.com/s/yi1cpg16snrl3fc/girls-like-you.mp3?raw=1"></audio>
+	<img src="https://i.imgur.com/YcpeBDy.png" /> <!-- No Lie Cover -->
+	<img src="https://i.imgur.com/1DlsRIY.png" /> <!-- LGBT Cover -->
+	<img src="https://i.imgur.com/ZyB0rzb.png" /> <!-- Colors of You Cover -->
+	<img src="https://i.imgur.com/yDjmSUk.png" /> <!-- GUY.exe Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Happier Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Brother Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Dandelions Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- you broke me first Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- In the stars Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Photograph Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Ohne Benzin (Sped Up) Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Power Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- SNAP (Sped Up) Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- die first Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- we made it Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Lights (Sped Up) Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Cool Kids (Sped Up) Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- You were there for me Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Devil doesn't bargain Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Paro (Sped Up) Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Boss B*tch Cover -->
+	<img src="https://i.imgur.com/YTJFscn.png" /> <!-- Middle of the Night Cover -->
+</div>
+
+
+
+</html>
